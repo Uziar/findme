@@ -14,7 +14,9 @@ class FoundController extends Controller {
      */
     public function index()
     {
-        //
+        $founds = found::latest()->get();
+        
+        return view('found.index',compact('founds'));
     }
     
     /**
