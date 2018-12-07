@@ -11,7 +11,7 @@
 |
 */
 
-Route::view('/', "welcome");
+Route::view('/', "PageController@index");
 
 Auth::routes();
 
@@ -26,6 +26,6 @@ Route::get('found', 'FoundController@index')->name('Found');
 Route::get('found/create','FoundController@create')->name('createFound');
 Route::post('found','FoundController@store')->name('storeFound');
 
-Route::view('browse', 'browse');
+//Route::view('browse', 'browse');
 Route::view('about', 'about');
 Route::view('contact', 'contact');

@@ -7,4 +7,12 @@
         <div><img src="/img/img1.jpg" title="Funky roots"></div>
     </div>
 
+    
+    @foreach($founds as $found)
+    
+    @endforeach
+    @foreach($missings as $missing)
+    
+    @endforeach
+    
 @endsection

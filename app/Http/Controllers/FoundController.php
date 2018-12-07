@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\found;
+use App\Found;
 use Illuminate\Http\Request;
 
 class FoundController extends Controller {
@@ -14,7 +14,7 @@ class FoundController extends Controller {
      */
     public function index()
     {
-        $founds = found::latest()->get();
+        $founds = Found::latest()->get();
         
         return view('found.index',compact('founds'));
     }
@@ -51,7 +51,7 @@ class FoundController extends Controller {
         ]);
         
         
-        found::create([
+        Found::create([
             'first_name'  => $request->first_name,
             'last_name'   => $request->last_name,
             'age'         => $request->age,
@@ -69,10 +69,10 @@ class FoundController extends Controller {
     /**
      * Display the specified resource.
      *
-     * @param  \App\found $found
+     * @param  \App\Found $found
      * @return \Illuminate\Http\Response
      */
-    public function show(found $found)
+    public function show(Found $found)
     {
         //
     }
@@ -80,10 +80,10 @@ class FoundController extends Controller {
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\found $found
+     * @param  \App\Found $found
      * @return \Illuminate\Http\Response
      */
-    public function edit(found $found)
+    public function edit(Found $found)
     {
         //
     }
@@ -92,10 +92,10 @@ class FoundController extends Controller {
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  \App\found               $found
+     * @param  \App\Found               $found
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, found $found)
+    public function update(Request $request, Found $found)
     {
         //
     }
@@ -103,10 +103,10 @@ class FoundController extends Controller {
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\found $found
+     * @param  \App\Found $found
      * @return \Illuminate\Http\Response
      */
-    public function destroy(found $found)
+    public function destroy(Found $found)
     {
         //
     }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\missing;
+use App\Missing;
 use Illuminate\Http\Request;
 
 class MissingController extends Controller {
@@ -48,7 +48,7 @@ class MissingController extends Controller {
         ]);
         
         
-        missing::create([
+        Missing::create([
             'first_name'  => $request->first_name,
             'last_name'   => $request->last_name,
             'age'         => $request->age,
@@ -66,10 +66,10 @@ class MissingController extends Controller {
     /**
      * Display the specified resource.
      *
-     * @param  \App\missing $missing
+     * @param  \App\Missing $missing
      * @return \Illuminate\Http\Response
      */
-    public function show(missing $missing)
+    public function show(Missing $missing)
     {
         //
     }
@@ -77,10 +77,10 @@ class MissingController extends Controller {
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\missing $missing
+     * @param  \App\Missing $missing
      * @return \Illuminate\Http\Response
      */
-    public function edit(missing $missing)
+    public function edit(Missing $missing)
     {
         //
     }
@@ -89,10 +89,10 @@ class MissingController extends Controller {
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
-     * @param  \App\missing             $missing
+     * @param  \App\Missing             $missing
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, missing $missing)
+    public function update(Request $request, Missing $missing)
     {
         //
     }
@@ -100,10 +100,10 @@ class MissingController extends Controller {
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\missing $missing
+     * @param  \App\Missing $missing
      * @return \Illuminate\Http\Response
      */
-    public function destroy(missing $missing)
+    public function destroy(Missing $missing)
     {
         //
     }
